@@ -1,5 +1,5 @@
 let hidden=true;
-
+let main=true;
 function toggleDropbox(){
     if(hidden){
         document.getElementById("dropbox").style.maxHeight="1000px";
@@ -12,7 +12,7 @@ function toggleDropbox(){
 function toggleTheme(){
     document.getElementById("dark-btn").classList.toggle("dark-on");
     document.body.classList.toggle("dark-theme");
-    
+
     if(localStorage.getItem("theme")==="light"){
         localStorage.setItem("theme","dark");
     }
@@ -20,6 +20,23 @@ function toggleTheme(){
         localStorage.setItem("theme","light");
     }
 }    
+function toggleMenu(){
+    document.querySelector(".left-sidebar").classList.toggle("left-menu");
+    if(main){
+        document.querySelector(".main-content").style.display="none";
+        if(window.innerWidth<1050 && window.innerWidth>768){
+            document.querySelector(".right-sidebar").style.display="none";
+        }
+    }
+    else{
+        document.querySelector(".main-content").style.display="block";
+        if(window.innerWidth<1050 && window.innerWidth>768){
+        document.querySelector(".right-sidebar").style.display="block";
+        }
+    }
+    main=!main;
+
+}
 
 //Save the theme after exit from the website
 if(localStorage.getItem("theme")==="light"){
