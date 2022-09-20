@@ -13,507 +13,533 @@
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
-    <!-------- Start navbar ---------->
-    <nav>
-      <!------------ Left side of the navbar ------------>
-      <div class="left-nav">
-        <a href="" class="logo"><span>Lets</span> Connect</a>
-        <ul>
-          <li><i class="fa-solid fa-bell fa-3x"></i></li>
-          <!-- notification icon -->
-          <li><i class="fa-solid fa-message fa-3x"></i></li>
-          <!-- inbox icon -->
-          <li><i class="fa-solid fa-video fa-3x"></i></li>
-          <!-- video icon -->
-          <li>
-            <i
-              onclick="toggleMenu()"
-              class="fa-solid fa-bars fa-3x small-menu"
-            ></i>
-          </li>
-          <!-- menu icon -->
-        </ul>
-      </div>
-      <!------------ right side of the navbar ------------>
-      <div class="right-nav">
-        <div class="search">
-          <i class="fa-solid fa-search fa-3x"></i>
-          <input type="text" placeholder="Search" />
-        </div>
-        <div class="user-icon online" onclick="toggleDropbox()">
-          <img src="Images/user.jpeg" alt="user" />
-        </div>
-      </div>
-
-      <!-- Start dropbox container -->
-      <div class="dropbox" id="dropbox">
-        <div id="dark-btn" onclick="toggleTheme()">
-          <span></span>
-        </div>
-        <div class="settings-menu">
-          <div class="user-profile">
-            <img src="./Images/user.jpeg" alt="user" />
-            <div>
-              <p>Mahmoud Ramzy</p>
-              <a href="#">Your Profile</a>
-            </div>
-          </div>
-          <hr />
-          <div class="settings-link">
-            <i class="fa-solid fa-comment-dots settings-icon"></i>
-            <a href="#"
-              >Give us Feedback <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-          <div class="settings-link">
-            <i class="fa-solid fa-gear settings-icon"></i>
-            <a href="#"
-              >Settings & Privacy <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-          <div class="settings-link">
-            <i class="fa-solid fa-circle-info settings-icon"></i>
-            <a href="#"
-              >Help & Support <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-          <div class="settings-link">
-            <i class="fa-solid fa-moon settings-icon"></i>
-            <a href="#"
-              >Display & Accessibility <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-          <div class="settings-link">
-            <i class="fa-solid fa-door-open settings-icon"></i>
-            <a href="#">Log out <i class="fa-solid fa-angle-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- End dropbox container -->
-    </nav>
-    <!-------- End navbar ---------->
-
-    <!-------- Start Landing page ---------->
-    <div class="landing-page">
-      <!--------- Left sidebar of the content --------->
-      <div class="left-sidebar">
-        <div class="left-links">
-          <a href="#"><i class="fa-solid fa-newspaper fa-3x"></i>Latest News</a>
-          <a href="#"><i class="fa-solid fa-user-group fa-3x"></i>Friends</a>
-          <a href="#"><i class="fa-solid fa-users fa-3x"></i>Groups</a>
-          <a href="#"><i class="fa-solid fa-shop fa-3x"></i>Marketplace</a>
-          <a href="#"><i class="fa-solid fa-film fa-3x"></i>watch</a>
-          <a href="#">See More</a>
-        </div>
-        <div class="shortcut">
-          <h3>Your Shortcuts</h3>
-          <a href="#"
-            ><img src="Images/Web_Development.png" alt="frontend" /> Web
-            Developers</a
-          >
-          <a href="#"><img src="Images/UI.jpeg" alt="UI" /> UI course</a>
-          <a href="#"
-            ><img src="Images/Mobile.jpeg" alt="mobile" /> Mobile Development</a
-          >
-          <a href="#"
-            ><img src="Images/flutter.png" alt="flutter" /> Flutter Course</a
-          >
-        </div>
-      </div>
-
-      <!--------- center and the main content --------->
-      <div class="main-content">
-        <!-- Start Story Gallery -->
-        <div class="story-gallery">
-          <div class="story">
-            <div class="imag">
-              <img src="./Images/Story1.jpg" alt="story1" />
-            </div>
-            <div class="add">
-              <i class="fa-solid fa-circle-plus"></i>
-              <p>Post story</p>
-            </div>
-          </div>
-          <div class="story">
-            <div class="imag">
-              <img src="./Images/Story2.jpg" alt="story2" />
-            </div>
-            <img src="./Images/user4.jpg" class="story-user" />
-            <p class="story-name">White</p>
-          </div>
-          <div class="story">
-            <div class="imag">
-              <img src="./Images/Story3.jpg" alt="story3" />
-            </div>
-            <img src="./Images/user2.jpeg" class="story-user" />
-            <p class="story-name">Gomaa</p>
-          </div>
-          <div class="story">
-            <div class="imag">
-              <img src="./Images/Story4.jpg" alt="story4" />
-            </div>
-            <img src="./Images/user3.jpeg" class="story-user" />
-            <p class="story-name">Ramadan</p>
-          </div>
-          <div class="story">
-            <div class="imag">
-              <img src="./Images/Story5.jpeg" alt="story5" />
-            </div>
-            <img src="./Images/user1.jpeg" class="story-user" />
-            <p class="story-name">Fathallah</p>
-          </div>
-        </div>
-        <!-- End Story Gallery -->
-
-        <!-- Start Add Post Container -->
-        <div class="add-post-container">
-          <div class="user-profile">
-            <img src="./Images/user.jpeg" alt="user" />
-            <div>
-              <p>Mahmoud Ramzy</p>
-              <small>Public <i class="fa-solid fa-sort-down"></i></small>
-            </div>
-          </div>
-          <div class="share-container">
-            <textarea
-              name="post"
-              id="post"
-              rows="3"
-              placeholder="What's on your mind, Ramzy?"
-            ></textarea>
-          </div>
-          <div class="additional-container">
-            <p>
-              <span class="s1"><i class="fa-solid fa-video"></i> </span>Live
-              video
-            </p>
-            <p>
-              <span class="s2"><i class="fa-solid fa-image"></i> </span>Photo/
-              Video
-            </p>
-            <p>
-              <span class="s3"
-                ><i class="fa-regular fa-face-laugh-wink"></i>
-              </span>
-              Feeling/ Activity
-            </p>
-          </div>
-        </div>
-        <!-- End Add Post Container -->
-
-        <!-- Start Shared Posts  -->
-        <!-- Start First Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user.jpeg" alt="user" />
-            <div class="post-name">
-              <p>Mahmoud Ramzy</p>
-              <small>13h. <i class="fa-solid fa-earth-africa"></i></small>
-            </div>
-          </div>
-          <p class="post-caption">
-            This is a beautiful image i found on the internet, i liked it very
-            much and if you want to follow me here is my linked in account:
-            <a
-              href="https://www.linkedin.com/in/mahmoud-ramzy-8861aa234/"
-              target="_blank"
-              >Mahmoud Ramzy</a
-            >
-          </p>
-          <img class="post-image" src="./Images/post1.jpeg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  250
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  16
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 9
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End First Post  -->
-
-        <!-- Start Second Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user1.jpeg" alt="user" />
-            <div class="post-name">
-              <p>Mahmoud Fathallah</p>
-              <small>2days. <i class="fa-solid fa-earth-africa"></i></small>
-            </div>
-          </div>
-          <p class="post-caption arabic">
-            لو قلبك مات متجيش علي اتنين اخوات
-            <span class="s4">#ثقة_فث_الله_نجاح</span>
-          </p>
-          <img class="post-image" src="./Images/user1.jpeg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  574
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  50
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 15
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End Second Post  -->
-
-        <!-- Start Third Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user4.jpg" alt="user" />
-            <div class="post-name">
-              <p>Walter White <i class="fa-solid fa-circle-check s4"></i></p>
-              <small
-                >January 20 at 12:20 AM. <i class="fa-solid fa-earth-africa"></i
-              ></small>
-            </div>
-          </div>
-          <p class="post-caption">
-            This is the a beautiful memory, the day I started my first season, I
-            want to thank you all 🥰 🥰.
-          </p>
-          <img class="post-image" src="./Images/Story2.jpg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  1.3M
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  160K
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 19K
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End Third Post  -->
-
-        <!-- Start Fourth Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user3.jpeg" alt="user" />
-            <div class="post-name">
-              <p>Mohamed Ramadan</p>
-              <small>3d. <i class="fa-solid fa-earth-africa"></i></small>
-            </div>
-          </div>
-          <p class="post-caption arabic">
-            كان يوم جميل جدا مع الصحبة الحلوة ❤️❤️
-          </p>
-          <img class="post-image" src="./Images/post2.jpg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  700
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  51
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 10
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End Fourth Post  -->
-
-        <!-- Start Fifth Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user5.jpg" alt="user" />
-            <div class="post-name">
-              <p>
-                نبيلة السيد عليش <i class="fa-solid fa-circle-check s4"></i>
-              </p>
-              <small>1h. <i class="fa-solid fa-earth-africa"></i></small>
-            </div>
-          </div>
-          <p class="post-caption arabic">
-            احدث صوري من مهرجان كان بيبسي السينيمائي الدولي العالمي الافريقي
-            🥰🥰
-          </p>
-          <img class="post-image" src="./Images/user5.jpg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  1.7M
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  158K
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 89K
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End Fifth Post  -->
-        <!-- Start Fifth Post  -->
-        <div class="post-container">
-          <div class="user-profile">
-            <img src="./Images/user6.jpg" alt="user" />
-            <div class="post-name">
-              <p>The Professor<i class="fa-solid fa-circle-check s4"></i></p>
-              <small>7h. <i class="fa-solid fa-earth-africa"></i></small>
-            </div>
-          </div>
-          <p class="post-caption">
-            Thanks Mahmoud Ramzy for drawing this beautiful image for me, its
-            really very cool 🥰🥰
-          </p>
-          <img class="post-image" src="./Images/post3.jpg" />
-          <div class="after-post">
-            <div class="post-row">
-              <div class="avtivity-icons">
-                <p>
-                  <span class="s4"><i class="fa-solid fa-thumbs-up"></i></span>
-                  2.8M
-                </p>
-                <p>
-                  <span class="s2"><i class="fa-solid fa-comments"></i></span>
-                  300K
-                </p>
-                <p>
-                  <span class="s3"><i class="fa-solid fa-share"></i></span> 178K
-                </p>
-              </div>
-            </div>
-            <div class="post-profile-icon">
-              <img src="./Images/user.jpeg" />
-              <i class="fa-solid fa-sort-down"></i>
-            </div>
-          </div>
-        </div>
-        <!-- End Fifth Post  -->
-        <button type="button" class="load-more">Load More</button>
-        <!-- End Shared Posts  -->
-      </div>
-
-      <!--------- Right sidebar of the content --------->
-      <div class="right-sidebar">
-        <!-- The Event title -->
-        <div class="title">
-          <h4>Events</h4>
-          <a href="#">See All</a>
-        </div>
-        <!-- Events -->
-        <div class="events">
-          <!-- The left column of the events -->
-          <div class="left-event">
-            <h3>1</h3>
-            <span>october</span>
-          </div>
-          <!-- The right column of the events -->
-          <div class="right-event">
-            <h4>Birthday</h4>
-            <p><i class="fa-solid fa-cake fa-1x"></i> Mahmoud Ramzy</p>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <div class="events">
-          <!-- The left column of the events -->
-          <div class="left-event">
-            <h3>25</h3>
-            <span>september</span>
-          </div>
-          <!-- The right column of the events -->
-          <div class="right-event">
-            <h4>Back to school</h4>
-            <p><i class="fa-solid fa-location-dot fa-1x"></i> Egypt</p>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <!-- The Ads title -->
-        <div class="title">
-          <h4>Advertising</h4>
-          <a href="#">Close</a>
-        </div>
-        <img src="Images/ads.jpeg" alt="ads" class="ads-img" />
-        <!-- The chat title -->
-        <div class="title">
-          <h4>Conversation</h4>
-          <a href="#">Hide Chat</a>
-        </div>
-        <!-- Online chat list -->
-        <div class="online-list">
-          <div class="online">
-            <img src="Images/user1.jpeg" alt="first chat" />
-          </div>
-          <p>Mahmoud Fathallah</p>
-        </div>
-        <div class="online-list">
-          <div class="online">
-            <img src="Images/user2.jpeg" alt="second chat" />
-          </div>
-          <p>Mahmoud Gomaa</p>
-        </div>
-        <div class="online-list">
-          <div class="online">
-            <img src="Images/user3.jpeg" alt="third chat" />
-          </div>
-          <p>Mohamed Ramadan</p>
-        </div>
-        <div class="online-list">
-          <div class="online">
-            <img src="Images/user4.jpg" alt="forth chat" />
-          </div>
-          <p>Walter White</p>
-        </div>
-      </div>
+    <div class="start-page">
+      <span class="lets">Lets</span>
+      <span class="connect">Connect</span>
     </div>
-    <!-------- End Landing page ---------->
-    <div class="footer">&copy; copyright 2022 - Mahmoud Ramzy</div>
+    <div class="all-container">
+      <!-------- Start navbar ---------->
+      <nav>
+        <!------------ Left side of the navbar ------------>
+        <div class="left-nav">
+          <a href="" class="logo"><span>Lets</span> Connect</a>
+          <ul>
+            <li><i class="fa-solid fa-bell fa-3x"></i></li>
+            <!-- notification icon -->
+            <li><i class="fa-solid fa-message fa-3x"></i></li>
+            <!-- inbox icon -->
+            <li><i class="fa-solid fa-video fa-3x"></i></li>
+            <!-- video icon -->
+            <li>
+              <i
+                onclick="toggleMenu()"
+                class="fa-solid fa-bars fa-3x small-menu"
+              ></i>
+            </li>
+            <!-- menu icon -->
+          </ul>
+        </div>
+        <!------------ right side of the navbar ------------>
+        <div class="right-nav">
+          <div class="search">
+            <i class="fa-solid fa-search fa-3x"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="user-icon online" onclick="toggleDropbox()">
+            <img src="Images/user.jpeg" alt="user" />
+          </div>
+        </div>
+
+        <!-- Start dropbox container -->
+        <div class="dropbox" id="dropbox">
+          <div id="dark-btn" onclick="toggleTheme()">
+            <span></span>
+          </div>
+          <div class="settings-menu">
+            <div class="user-profile">
+              <img src="./Images/user.jpeg" alt="user" />
+              <div>
+                <p>Mahmoud Ramzy</p>
+                <a href="#">Your Profile</a>
+              </div>
+            </div>
+            <hr />
+            <div class="settings-link">
+              <i class="fa-solid fa-comment-dots settings-icon"></i>
+              <a href="#"
+                >Give us Feedback <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="settings-link">
+              <i class="fa-solid fa-gear settings-icon"></i>
+              <a href="#"
+                >Settings & Privacy <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="settings-link">
+              <i class="fa-solid fa-circle-info settings-icon"></i>
+              <a href="#"
+                >Help & Support <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="settings-link">
+              <i class="fa-solid fa-moon settings-icon"></i>
+              <a href="#"
+                >Display & Accessibility <i class="fa-solid fa-angle-right"></i
+              ></a>
+            </div>
+            <div class="settings-link">
+              <i class="fa-solid fa-door-open settings-icon"></i>
+              <a href="#">Log out <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- End dropbox container -->
+      </nav>
+      <!-------- End navbar ---------->
+
+      <!-------- Start Landing page ---------->
+      <div class="landing-page">
+        <!--------- Left sidebar of the content --------->
+        <div class="left-sidebar">
+          <div class="left-links">
+            <a href="#"
+              ><i class="fa-solid fa-newspaper fa-3x"></i>Latest News</a
+            >
+            <a href="#"><i class="fa-solid fa-user-group fa-3x"></i>Friends</a>
+            <a href="#"><i class="fa-solid fa-users fa-3x"></i>Groups</a>
+            <a href="#"><i class="fa-solid fa-shop fa-3x"></i>Marketplace</a>
+            <a href="#"><i class="fa-solid fa-film fa-3x"></i>watch</a>
+            <a href="#">See More</a>
+          </div>
+          <div class="shortcut">
+            <h3>Your Shortcuts</h3>
+            <a href="#"
+              ><img src="Images/Web_Development.png" alt="frontend" /> Web
+              Developers</a
+            >
+            <a href="#"><img src="Images/UI.jpeg" alt="UI" /> UI course</a>
+            <a href="#"
+              ><img src="Images/Mobile.jpeg" alt="mobile" /> Mobile
+              Development</a
+            >
+            <a href="#"
+              ><img src="Images/flutter.png" alt="flutter" /> Flutter Course</a
+            >
+          </div>
+        </div>
+
+        <!--------- center and the main content --------->
+        <div class="main-content">
+          <!-- Start Story Gallery -->
+          <div class="story-gallery">
+            <div class="story">
+              <div class="imag">
+                <img src="./Images/Story1.jpg" alt="story1" />
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-circle-plus"></i>
+                <p>Post story</p>
+              </div>
+            </div>
+            <div class="story">
+              <div class="imag">
+                <img src="./Images/Story2.jpg" alt="story2" />
+              </div>
+              <img src="./Images/user4.jpg" class="story-user" />
+              <p class="story-name">White</p>
+            </div>
+            <div class="story">
+              <div class="imag">
+                <img src="./Images/Story3.jpg" alt="story3" />
+              </div>
+              <img src="./Images/user2.jpeg" class="story-user" />
+              <p class="story-name">Gomaa</p>
+            </div>
+            <div class="story">
+              <div class="imag">
+                <img src="./Images/Story4.jpg" alt="story4" />
+              </div>
+              <img src="./Images/user3.jpeg" class="story-user" />
+              <p class="story-name">Ramadan</p>
+            </div>
+            <div class="story">
+              <div class="imag">
+                <img src="./Images/Story5.jpeg" alt="story5" />
+              </div>
+              <img src="./Images/user1.jpeg" class="story-user" />
+              <p class="story-name">Fathallah</p>
+            </div>
+          </div>
+          <!-- End Story Gallery -->
+
+          <!-- Start Add Post Container -->
+          <div class="add-post-container">
+            <div class="user-profile">
+              <img src="./Images/user.jpeg" alt="user" />
+              <div>
+                <p>Mahmoud Ramzy</p>
+                <small>Public <i class="fa-solid fa-sort-down"></i></small>
+              </div>
+            </div>
+            <div class="share-container">
+              <textarea
+                name="post"
+                id="post"
+                rows="3"
+                placeholder="What's on your mind, Ramzy?"
+              ></textarea>
+            </div>
+            <div class="additional-container">
+              <p>
+                <span class="s1"><i class="fa-solid fa-video"></i> </span>Live
+                video
+              </p>
+              <p>
+                <span class="s2"><i class="fa-solid fa-image"></i> </span>Photo/
+                Video
+              </p>
+              <p>
+                <span class="s3"
+                  ><i class="fa-regular fa-face-laugh-wink"></i>
+                </span>
+                Feeling/ Activity
+              </p>
+            </div>
+          </div>
+          <!-- End Add Post Container -->
+
+          <!-- Start Shared Posts  -->
+          <!-- Start First Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user.jpeg" alt="user" />
+              <div class="post-name">
+                <p>Mahmoud Ramzy</p>
+                <small>13h. <i class="fa-solid fa-earth-africa"></i></small>
+              </div>
+            </div>
+            <p class="post-caption">
+              This is a beautiful image i found on the internet, i liked it very
+              much and if you want to follow me here is my linked in account:
+              <a
+                href="https://www.linkedin.com/in/mahmoud-ramzy-8861aa234/"
+                target="_blank"
+                >Mahmoud Ramzy</a
+              >
+            </p>
+            <img class="post-image" src="./Images/post1.jpeg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    250
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    16
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span> 9
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End First Post  -->
+
+          <!-- Start Second Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user1.jpeg" alt="user" />
+              <div class="post-name">
+                <p>Mahmoud Fathallah</p>
+                <small>2days. <i class="fa-solid fa-earth-africa"></i></small>
+              </div>
+            </div>
+            <p class="post-caption arabic">
+              لو قلبك مات متجيش علي اتنين اخوات
+              <span class="s4">#ثقة_فث_الله_نجاح</span>
+            </p>
+            <img class="post-image" src="./Images/user1.jpeg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    574
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    50
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span> 15
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Second Post  -->
+
+          <!-- Start Third Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user4.jpg" alt="user" />
+              <div class="post-name">
+                <p>Walter White <i class="fa-solid fa-circle-check s4"></i></p>
+                <small
+                  >January 20 at 12:20 AM.
+                  <i class="fa-solid fa-earth-africa"></i
+                ></small>
+              </div>
+            </div>
+            <p class="post-caption">
+              This is the a beautiful memory, the day I started my first season,
+              I want to thank you all 🥰 🥰.
+            </p>
+            <img class="post-image" src="./Images/Story2.jpg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    1.3M
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    160K
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span>
+                    19K
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Third Post  -->
+
+          <!-- Start Fourth Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user3.jpeg" alt="user" />
+              <div class="post-name">
+                <p>Mohamed Ramadan</p>
+                <small>3d. <i class="fa-solid fa-earth-africa"></i></small>
+              </div>
+            </div>
+            <p class="post-caption arabic">
+              كان يوم جميل جدا مع الصحبة الحلوة ❤️❤️
+            </p>
+            <img class="post-image" src="./Images/post2.jpg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    700
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    51
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span> 10
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Fourth Post  -->
+
+          <!-- Start Fifth Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user5.jpg" alt="user" />
+              <div class="post-name">
+                <p>
+                  نبيلة السيد عليش <i class="fa-solid fa-circle-check s4"></i>
+                </p>
+                <small>1h. <i class="fa-solid fa-earth-africa"></i></small>
+              </div>
+            </div>
+            <p class="post-caption arabic">
+              احدث صوري من مهرجان كان بيبسي السينيمائي الدولي العالمي الافريقي
+              🥰🥰
+            </p>
+            <img class="post-image" src="./Images/user5.jpg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    1.7M
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    158K
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span>
+                    89K
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Fifth Post  -->
+          <!-- Start Fifth Post  -->
+          <div class="post-container">
+            <div class="user-profile">
+              <img src="./Images/user6.jpg" alt="user" />
+              <div class="post-name">
+                <p>The Professor<i class="fa-solid fa-circle-check s4"></i></p>
+                <small>7h. <i class="fa-solid fa-earth-africa"></i></small>
+              </div>
+            </div>
+            <p class="post-caption">
+              Thanks Mahmoud Ramzy for drawing this beautiful image for me, its
+              really very cool 🥰🥰
+            </p>
+            <img class="post-image" src="./Images/post3.jpg" />
+            <div class="after-post">
+              <div class="post-row">
+                <div class="avtivity-icons">
+                  <p>
+                    <span class="s4"
+                      ><i class="fa-solid fa-thumbs-up"></i
+                    ></span>
+                    2.8M
+                  </p>
+                  <p>
+                    <span class="s2"><i class="fa-solid fa-comments"></i></span>
+                    300K
+                  </p>
+                  <p>
+                    <span class="s3"><i class="fa-solid fa-share"></i></span>
+                    178K
+                  </p>
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./Images/user.jpeg" />
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- End Fifth Post  -->
+          <button type="button" class="load-more">Load More</button>
+          <!-- End Shared Posts  -->
+        </div>
+
+        <!--------- Right sidebar of the content --------->
+        <div class="right-sidebar">
+          <!-- The Event title -->
+          <div class="title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+          </div>
+          <!-- Events -->
+          <div class="events">
+            <!-- The left column of the events -->
+            <div class="left-event">
+              <h3>1</h3>
+              <span>october</span>
+            </div>
+            <!-- The right column of the events -->
+            <div class="right-event">
+              <h4>Birthday</h4>
+              <p><i class="fa-solid fa-cake fa-1x"></i> Mahmoud Ramzy</p>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+          <div class="events">
+            <!-- The left column of the events -->
+            <div class="left-event">
+              <h3>25</h3>
+              <span>september</span>
+            </div>
+            <!-- The right column of the events -->
+            <div class="right-event">
+              <h4>Back to school</h4>
+              <p><i class="fa-solid fa-location-dot fa-1x"></i> Egypt</p>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+          <!-- The Ads title -->
+          <div class="title">
+            <h4>Advertising</h4>
+            <a href="#">Close</a>
+          </div>
+          <img src="Images/ads.jpeg" alt="ads" class="ads-img" />
+          <!-- The chat title -->
+          <div class="title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+          </div>
+          <!-- Online chat list -->
+          <div class="online-list">
+            <div class="online">
+              <img src="Images/user1.jpeg" alt="first chat" />
+            </div>
+            <p>Mahmoud Fathallah</p>
+          </div>
+          <div class="online-list">
+            <div class="online">
+              <img src="Images/user2.jpeg" alt="second chat" />
+            </div>
+            <p>Mahmoud Gomaa</p>
+          </div>
+          <div class="online-list">
+            <div class="online">
+              <img src="Images/user3.jpeg" alt="third chat" />
+            </div>
+            <p>Mohamed Ramadan</p>
+          </div>
+          <div class="online-list">
+            <div class="online">
+              <img src="Images/user4.jpg" alt="forth chat" />
+            </div>
+            <p>Walter White</p>
+          </div>
+        </div>
+      </div>
+      <!-------- End Landing page ---------->
+      <div class="footer">&copy; copyright 2022 - Mahmoud Ramzy</div>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>

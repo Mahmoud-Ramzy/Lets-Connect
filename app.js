@@ -1,5 +1,12 @@
 let hidden=true;
 let main=true;
+
+setTimeout(()=>{
+    document.querySelector(".start-page").style.display="none";
+    document.querySelector(".all-container").style.display="block";
+
+},2600)
+
 function toggleDropbox(){
     if(hidden){
         document.getElementById("dropbox").style.maxHeight="1000px";
